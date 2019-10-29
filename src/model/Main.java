@@ -17,6 +17,8 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
+import model.tree.SegmentTree;
+
 public class Main {
 	int a = 100;
 
@@ -192,8 +194,8 @@ public class Main {
 	//	Chef_DSTAPLS.code();
 		//Microsoft_Gateway.code();
 		//Chef_MATCHES.code();
-		Chef_CATFEED.code();
-
+		//Chef_CATFEED.code();
+		SegmentTree.code();
 	}
 
 	static class enumdec {
