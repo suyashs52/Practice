@@ -17,8 +17,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-import model.tree.SegmentTree;
-
 public class Main {
 	int a = 100;
 
@@ -189,13 +187,33 @@ public class Main {
 		 * System.out.println("press ctrl+c to stop.");
 		 */
 
-		//Intralink_arrival.code();
-		//Chef_MSNSADM1.code();
-	//	Chef_DSTAPLS.code();
-		//Microsoft_Gateway.code();
-		//Chef_MATCHES.code();
-		//Chef_CATFEED.code();
-		SegmentTree.code();
+		// Intralink_arrival.code();
+		// Chef_MSNSADM1.code();
+		// Chef_DSTAPLS.code();
+		// Microsoft_Gateway.code();
+		// Chef_MATCHES.code();
+		// Chef_CATFEED.code();
+		// SegmentTree.code();
+		// Chef_WATSCORE.code();
+		// Chef_PLMU.code();
+		// Chef_Pr_LECANDY.code();
+		Chef_Pr_SALARY.code();
+		// System.out.println(inspect("Hello BOx") );
+	}
+
+	static <T extends Comparable<T>> int counte(T[] a2, T i) {
+		int count = 0;
+		for (T e : a2) {
+			if (e.compareTo(i) > 0) {
+				++count;
+			}
+		}
+		return count;
+	}
+
+	static <T extends Number> int inspect(T i) {
+		System.out.println("U" + i.getClass().getName());
+		return 0;
 	}
 
 	static class enumdec {

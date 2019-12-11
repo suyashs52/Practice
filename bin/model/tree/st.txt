@@ -1,0 +1,66 @@
+(s,e,c,line)0,3,0,1
+(s,e,c,line)0,1,1,1
+(s,e,c,line)0,0,3,return
+assign index value3>-1
+(s,e,c,line)0,1,1,2
+(s,e,c,line)1,1,4,return
+assign index value4>2
+assign min value for index 1
+(s,e,c0,line)0,3,0,2 -->pass(mid+1=1,3,current+2=2,1)
+(s,e,c,line)2,3,2,1
+(s,e,c,line)2,2,5,return
+assign index value5>4
+(s,e,c,line)2,3,2,2
+(s,e,c,line)3,3,6,return
+assign index value6>0
+assign min value for index 2
+assign min value for index 0
+2,-1,0,-1,2,4,0,
+
+ 0 1 2 3
+-1 2 4 0 
+0-3 2+1
+1-4 2+2
+2-5 4+1
+3-6 4+2
+
+put 0 index to last index
+and so on
+0 to 3 1*2+1
+1 to 4 1*2+2     
+0+3/2 1
+
+now 3 index you want when index goes to 0
+  4  index when index goes to 1
+  current index=length-1
+store value of 3,4 to variable
+take min of both and store in index 1 that is 4 indexed  
+ 
+
+		   -1(0)
+	-1(1)      0(2)
+-1(3) 2(4) 4(5) 0(6)
+arr[]={-1,2,4,0}
+first call segmenttree(arr,0,3,0)
+int segmenttree(arr[],start,end,current){
+//      0+3/2 =1 0+1/2=0 start=0,end=0
+//itr current: 0,      1,    1*2+1=  3
+// at 3 return so  sg[3]=arr[0]next moved to line 2
+// at next rec after line one on 0+1/2 condition
+// 0+1=1, end:1,1*2+2=4 from line 2 assign sg[4]=arr[1] return
+// next take min first,last current is 1 as we passing (1(current)*2+2)
+// sg[current]=min(first,last); return arr[start];
+
+if(start==end){
+	sg[current]=arr[start];
+	return arr[start];
+}
+int mid=start+(end-start)/2;  // 0+3/2 =1
+int first=segmenttree(start,mid,current*2+1);
+int last=segmenttree(mid+1,end,current*2+2);
+sg[current]=min(first,last);
+return 1;
+}
+
+
+
