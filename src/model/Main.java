@@ -25,133 +25,40 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
-		// System.out.println(1 << 16);
+		code();
+	}
 
-		/*
-		 * Set h = new HashSet<>(); h.add(1); h.add(2); h.add(3); h.add(4); h.add(1);
-		 * 
-		 * h.add(4); List l = new ArrayList<>();
-		 * 
-		 * l.add(1); l.add(2); l.add(3);
-		 * 
-		 * h.retainAll(l); System.out.println(" " + h.size());
-		 */
-		// Integer a = 1000, b = 1000;
-		// System.out.println(a == b);
+	static void code() {
+		chefcode();
+		// interviewcode();
+	}
 
-		// Integer c = 200, d = 200;
-		// System.out.println(c == d);
-		// BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// PrintWriter pr = new PrintWriter(System.out);
-		// int testcase = Integer.parseInt(br.readLine().trim());
-		// for (int i = 0; i < testcase; i++) {
-		// int range = Integer.parseInt(br.readLine().trim());
-		// //check how to convert string with space to int effective way
-		// int[] num= Arrays.stream(br.readLine().trim().split("
-		// ")).mapToInt(Integer::parseInt).toArray();
-		//
-		// Arrays.sort(num);
-		//
-		// // if(num.length==1)System.out.println(-1);
-		//
-		// int k=0;
-		// for(int j:num) {
-		//
-		// if(j!=num[0]) {System.out.println(num[0]+" "+j); k++; break;}
-		// }
-		// if(k==0) System.out.println(-1);
-		//
-		//
-		// }
-		/*
-		 * for (int i = 0; i < testcase; i++) { String input=br.readLine().trim();
-		 * String [] inp=input.split(" "); char[] c1=inp[0].toCharArray(); char []
-		 * c2=inp[1].toCharArray(); Arrays.sort(c1); Arrays.sort(c2);
-		 * 
-		 * if(Arrays.equals(c1, c2)) System.out.println("YES"); else
-		 * System.out.println("NO"); }
-		 */
-
-		// pr.close();
-		// br.close();
-
-		// Prac_Serialize.code();
+	static void interviewcode() {
+		// Intralink_arrival.code();
+		// Navis.code();
 		// Sapient_CSVRead.code();
-		/*
-		 * boolean b1 = true; boolean b2 = false; boolean b3 = true; if (b1 & b2 | b2 &
-		 * b3 | b2 | b1) { System.out.println("ok"); } System.out.println(b1 & b2 | b2);
-		 * 
-		 * // System.out.println(new b(4).base); /* long[] b3 = { 3, 4, 5 }; final
-		 * long[] b2 = { 10, 11, 23 };
-		 * 
-		 * try { perform(b3); System.out.println("k"); } catch (RuntimeException ex) {
-		 * System.out.println("a"); } catch (Exception ex) { System.out.println("b"); }
-		 * finally { System.out.println("c"); } System.out.println("d");
-		 */
-		/*
-		 * Test.main();
-		 * 
-		 * Map<abc, Integer> x = new HashMap<abc, Integer>(); x.put(new abc(1), 1);
-		 * x.put(new abc(2), 2); x.put(new abc(3), 3); x.put(new abc(4), 4);
-		 * 
-		 * System.out.println(new abc(2)==new abc(3)); for (Entry<abc, Integer> e :
-		 * x.entrySet()) { System.out.println(e.getKey().base);
-		 * System.out.println(e.getValue()); } x.remove(new abc(3));
-		 * System.out.println(x.size()); int j=100000; int k=100000;
-		 * System.out.println(j== k);
-		 */
-
-		/*
-		 * int i='a'; System.out.println(i); System.out.println(IntStream.range('a',
-		 * 'z').sum());
-		 */
-		/*
-		 * CountDownLatch cdl=new CountDownLatch(3); TestThread t1 = new
-		 * TestThread(1,cdl,"t1"); TestThread t2 = new TestThread(1,cdl,"t2");
-		 * TestThread t3 = new TestThread(1,cdl,"t3");
-		 * 
-		 * if (t1.isAlive() && t2.isAlive() && t3.isAlive()) { tt.flag = false;
-		 * System.out.println("All thread stopped successfully"); } t1.start();
-		 * t2.start(); t3.start(); cdl.await();
-		 * System.out.println("All thread runned successfully");
-		 */
-		// CyclicBarrier cb=new CyclicBarrier(3);
-		/*
-		 * TestCyclicBarrier tcb = new TestCyclicBarrier(1, "tcb"); Thread t1 = new
-		 * Thread(tcb); t1.start();
-		 */
-		// System.out.println(Thread.currentThread().getName() + " has finished");
-		/*
-		 * OddEvenPrint oep = new OddEvenPrint(); oep.odd = true; Thread t2 = new
-		 * Thread(new Runnable() {
-		 * 
-		 * @Override public void run() { // TODO Auto-generated method stub
-		 * oep.printEven(); } }); Thread t3 = new Thread(new Runnable() {
-		 * 
-		 * @Override public void run() { // TODO Auto-generated method stub
-		 * oep.printOdd(); } });
-		 */
-		/*
-		 * t2.start(); t3.start(); t2.join(); t3.join();
-		 */
-		/*
-		 * @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-		 * 
-		 * @JoinTable(name = "stock_category", catalog = "mkyongdb", joinColumns = {
-		 * 
-		 * @JoinColumn(name = "STOCK_ID", nullable = false, updatable = false) },
-		 * inverseJoinColumns = { @JoinColumn(name = "CATEGORY_ID", nullable = false,
-		 * updatable = false) })
-		 * 
-		 * @ManyToMany(fetch = FetchType.LAZY, mappedBy = "categories")
-		 */
-		// X.mains();
+		// Sapient_ExcelRead.processExcel();
+		// Sapient_ExcelEmployee.processExcel();
+		// hacker
+		// Rank_StrIntro.code();
+		// CivilEngineer.code();
+		// Microsoft_Gateway.code();
 		// expedia();
 		// System.out.println(missingWords("I am using hackerrank to improve
 		// programming", "am hackerrank to improve"));
+		// Prac_Serialize.code();
+		// Sapient_CSVRead.code();
+
 		// lenscart_largestone();
 		// lenscart_chargeup();
 		// lenscart_Curve();
+
+	}
+
+	static void chefcode() {
+
+		// Chef_MATCHES.code();
+		// Chef_CATFEED.code();
 		// Chef_CHEFING.code();
 
 		// Chef_CHDIGER.code1();
@@ -160,45 +67,19 @@ public class Main {
 		// Chef_DEPCHEF.code();
 		// Chef_PROXYC.code();
 		// Chef_KS2.code();
-
-		// Sapient_ExcelRead.processExcel();
-		// Sapient_ExcelEmployee.processExcel();
-		// hacker
-		// Rank_StrIntro.code();
-		/*
-		 * switch(3) { default: System.out.println(5); case 4: System.out.println(4);
-		 * case 3:System.out.println(3); case 5:System.out.println(5);
-		 * 
-		 * }
-		 */
-
-		// Navis.code();
-		// Sapient_CSVRead.code();
-
-		// CivilEngineer.code();
-		// ThreadPoolTest.code();
-
-		// producer consumer pro testthread.java
-		/*
-		 * q qu=new q(); producer pr=new producer(qu); consumer co=new consumer(qu);
-		 * consumer co1=new consumer(qu);
-		 * 
-		 * co1.t.start();pr.t.start(); co.t.start();
-		 * System.out.println("press ctrl+c to stop.");
-		 */
-
-		// Intralink_arrival.code();
-		// Chef_MSNSADM1.code();
-		// Chef_DSTAPLS.code();
-		// Microsoft_Gateway.code();
-		// Chef_MATCHES.code();
-		// Chef_CATFEED.code();
-		// SegmentTree.code();
 		// Chef_WATSCORE.code();
 		// Chef_PLMU.code();
 		// Chef_Pr_LECANDY.code();
-		Chef_Pr_SALARY.code();
+		// Chef_Pr_SALARY.code();
+		// Chef_MSNSADM1.code();
+		// Chef_DSTAPLS.code();
+		Chef_Pr_COPS.code();
+	}
+
+	static void javacode() {
 		// System.out.println(inspect("Hello BOx") );
+		// System.out.println(1 << 16);
+
 	}
 
 	static <T extends Comparable<T>> int counte(T[] a2, T i) {
