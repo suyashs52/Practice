@@ -27,7 +27,7 @@ public class Chef_Pr_COPS {
 
 				for (int i = 0; i < line1[0] && j1 < 101; i++) {
 					j1 = Math.max(line2[i] - multi, j1);
-					int jl = Math.min(100, line2[i] + multi);
+					int jl = Math.min(100, line2[i] + multi); 
 
 					for (; j1 < jl + 1; j1++) {
 						home[j1] = 1;
