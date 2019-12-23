@@ -17,6 +17,10 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
+import model.chef.Chef_PLMU;
+import model.chef.Chef_Pr_COPS;
+import model.chef.Chef_Pr_CSUB;
+
 public class Main {
 	int a = 100;
 
@@ -26,9 +30,11 @@ public class Main {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
 		code();
+
 	}
 
 	static void code() {
+
 		chefcode();
 		// interviewcode();
 	}
@@ -73,7 +79,9 @@ public class Main {
 		// Chef_Pr_SALARY.code();
 		// Chef_MSNSADM1.code();
 		// Chef_DSTAPLS.code();
-		Chef_Pr_COPS.code();
+		// Chef_Pr_COPS.code();
+		//Chef_Pr_CSUB.code();
+		Chef_PLMU.code();
 	}
 
 	static void javacode() {
