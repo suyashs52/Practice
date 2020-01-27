@@ -1,4 +1,4 @@
-package model;
+package model.main;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,8 +18,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import model.chef.Chef_PLMU;
-import model.chef.Chef_Pr_COPS;
-import model.chef.Chef_Pr_CSUB;
+import model.spoj.JNEXT;
 
 public class Main {
 	int a = 100;
@@ -35,8 +34,9 @@ public class Main {
 
 	static void code() {
 
-		chefcode();
+		// chefcode();
 		// interviewcode();
+		spojcode();
 	}
 
 	static void interviewcode() {
@@ -80,8 +80,17 @@ public class Main {
 		// Chef_MSNSADM1.code();
 		// Chef_DSTAPLS.code();
 		// Chef_Pr_COPS.code();
-		//Chef_Pr_CSUB.code();
+		// Chef_Pr_CSUB.code();
 		Chef_PLMU.code();
+	}
+
+	static void spojcode() {
+		try {
+			JNEXT.code1();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	static void javacode() {
